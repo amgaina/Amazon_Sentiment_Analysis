@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Sentiment Analysis</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        .container {
+            margin-top: 50px;
+        }
+        .header {
+            text-align: center;
+            padding: 20px;
+            color: #343a40;
+        }
+        .form-section {
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .result-section {
+            margin-top: 30px;
+            padding: 20px;
+            background-color: #e9ecef;
+            border-radius: 8px;
+            text-align: center;
+        }
+        .footer {
+            text-align: center;
+            padding: 15px;
+            margin-top: 30px;
+            font-size: 14px;
+            color: #6c757d;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="header">
+        <h1>Amazon Sentiment Analysis</h1>
+        <p>Analyze the sentiment of customer reviews as positive or negative using Natural Language Processing.</p>
+    </div>
+
+    <div class="form-section">
+        <form action="/" method="post">
+            <div class="form-group">
+                <label for="text">Enter your text or sentence:</label>
+                <textarea class="form-control" id="text" name="text" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Predict Sentiment</button>
+        </form>
+    </div>
+
+    <div id="text_sentiment" class="result-section">
+        {% if content %}
+            <h4>Sentiment Analysis Result: {{ content }}</h4>
+            <p class="font-weight-bold"></p>
+        {% else %}
+            <p>Enter a review to predict its sentiment as Positive or Negative.</p>
+        {% endif %}
+    </div>
+
+    <div class="tools-section mt-5">
+        <h4>Tools Used</h4>
+        <ul>
+            <li>Natural Language Toolkit (NLTK)</li>
+            <li>Pandas</li>
+            <li>XGBoost Classifier</li>
+            <li>CountVectorizer</li>
+            <li>scikit-learn</li>
+            <li>Flask</li>
+            <li>Bootstrap</li>
+        </ul>
+    </div>
+</div>
+
+<div class="footer">
+    &copy; {{2024}} Amazon Sentiment Analysis. All Rights Reserved. &copy Abhishek Amgain 
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
