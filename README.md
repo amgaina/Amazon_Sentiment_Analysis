@@ -46,6 +46,4 @@ This is a Natural Language Processing (NLP)-based web application designed to an
 
 ## Screenshot
 
-![Amazon Feedback Sentiment Analyzer Screenshot](static/## Screenshot
-
-![Amazon Feedback Sentiment Analyzer Screenshot](assets/screenshot.png)
+![Amazon Feedback Sentiment Analyzer Screenshot](static/Screenshot 2024-11-09 at 1.04.57 PM.png)
